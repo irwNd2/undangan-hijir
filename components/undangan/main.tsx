@@ -208,7 +208,7 @@ function MainUndangan() {
                         height={140} 
                         width={140} 
                     />
-                    <div className='absolute bottom-2 px-2 z-20'>
+                    <div className='absolute bottom-2 px-1 z-20'>
                         <div className='flex bg-red-600 rounded px-2.5 py-1 text-[10px] font-bold'>
                             <p>{`Groom's Favorite`}</p>
                         </div>
@@ -236,7 +236,7 @@ function MainUndangan() {
                         height={140} 
                         width={140} 
                     />
-                    <div className='absolute bottom-2 px-2 z-20'>
+                    <div className='absolute bottom-2 px-1 z-20'>
                         <div className='flex bg-red-600 rounded px-2.5 py-1 text-[10px] font-bold'>
                             <p>{`Our Favorite <3`}</p>
                         </div>
@@ -277,7 +277,7 @@ function MainUndangan() {
                         height={140} 
                         width={140} 
                     />
-                    <div className='absolute bottom-2 px-2 z-20'>
+                    <div className='absolute bottom-2 px-1 z-20'>
                         <div className='flex bg-red-600 rounded px-2.5 py-1 text-[10px] font-bold'>
                             <p>{`Bride's Favorite`}</p>
                         </div>
