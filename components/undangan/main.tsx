@@ -28,7 +28,6 @@ function MainUndangan() {
         <video 
             src="/video/video-1.mp4" 
             autoPlay 
-            muted 
             loop 
             playsInline 
             className="max-w-[400px] w-full rounded-b"
