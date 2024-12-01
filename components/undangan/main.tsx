@@ -70,7 +70,7 @@ function MainUndangan() {
 
     const handleCopy = async () => {
         try {
-            await navigator.clipboard.writeText('1234565779');
+            await navigator.clipboard.writeText('490801013568532');
             setIsCopied(true);
             const timer = setTimeout(() => {
                 setIsCopied(false);
@@ -82,6 +82,10 @@ function MainUndangan() {
             } catch (err) {
             console.error('Failed to copy text: ', err);
             }
+    }
+
+    const handleGoogleMaps = () => {
+        window.open(`https://www.google.com/maps/search/?api=1&query=-3.486321,119.789700`)
     }
   return (
     <>
@@ -103,7 +107,7 @@ function MainUndangan() {
                     />
                     <p className="text-sm font-poppins text-white/70">D O C U M E N T E R</p>
                 </div>
-                <p className='text-xl font-bold -mt-2'>Acha & Hijir: Sebelum Hari H</p>
+                <p className='text-xl font-bold -mt-2'>Acha & Jira: Sebelum Hari H</p>
                 <div className='flex gap-2 items-center text-sm'>
                     <p className='text-green-600'>100% match</p>
                     <div className='rounded-[2px] bg-gray-600 flex items-center max-h-4 px-0.5'>
@@ -130,14 +134,14 @@ function MainUndangan() {
                 <div className='rounded bg-red-600 px-2 py-0.5 text-sm font-bold w-[330px] my-2'>
                     <p>Cooming soon on Monday, 16 December 2024</p>
                 </div>
-                <p className='text-sm'>Setelah Acha dan Hijir dipertemukan dalam situasi yang tepat, di mana keduanya telah siap untuk memulai hubungan bersama, tibalah mereka di awal perjalanan baru menuju pernikahan.</p>
+                <p className='text-sm'>Setelah Acha dan Jira dipertemukan dalam situasi yang tepat, di mana keduanya telah siap untuk memulai hubungan bersama, tibalah mereka di awal perjalanan baru menuju pernikahan.</p>
                 <p className='text-xs text-gray-500 mt-4'>{`"Segala sesuatu Kami ciptakan berpasang-pasangan agar kamu mengingat (kebesaran Allah)" (Q.S Az-Zariyah: 49)`}</p>
             </div>
             <div className='flex flex-col max-w-[400px] w-full mt-4 gap-2'>
                 <h2 className='font-bold text-lg'>Breaking News</h2>
                 <Image
                     src={Picture2} 
-                    alt="Hijir & acha"
+                    alt="Jira & acha"
                     height={400} 
                     width={400} 
                     className='rounded cursor-pointer'
@@ -195,7 +199,7 @@ function MainUndangan() {
                     <div className='flex gap-3 items-center'>
                         <Image
                             src={Kenalan} 
-                            alt="Hijir & acha"
+                            alt="Jira & acha"
                             height={200} 
                             width={200} 
                             className='rounded cursor-pointer'
@@ -214,7 +218,7 @@ function MainUndangan() {
                     <div className='flex gap-3 items-center'>
                         <Image
                             src={Picture1} 
-                            alt="Hijir & acha"
+                            alt="Jira & acha"
                             height={200} 
                             width={200} 
                             className='rounded cursor-pointer'
@@ -231,7 +235,7 @@ function MainUndangan() {
                     <div className='flex gap-3 items-center'>
                         <Image
                             src={Lamaran} 
-                            alt="Hijir & acha"
+                            alt="Jira & acha"
                             height={200} 
                             width={200} 
                             className='rounded cursor-pointer'
@@ -248,7 +252,7 @@ function MainUndangan() {
                     <div className='flex gap-3 items-center'>
                         <Image
                             src={Nikahan} 
-                            alt="Hijir & acha"
+                            alt="Jira & acha"
                             height={200} 
                             width={200} 
                             className='rounded cursor-pointer'
@@ -481,7 +485,7 @@ function MainUndangan() {
                         height={300} 
                         width={300} 
                     />
-                    <Button className={`font-poppins border-2 flex items-center -mt-20 border-white`}>
+                    <Button className={`font-poppins border-2 flex items-center -mt-20 border-white`} onClick={handleGoogleMaps}>
                         <MapPinHouse />
                         GOOGLE  MAPS</Button>
                 </div>
