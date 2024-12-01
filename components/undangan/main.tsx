@@ -31,6 +31,9 @@ import JatuhCinta from '@/lib/assets/judul film/jatuh cinta seperti di film film
 import PerfectDate from '@/lib/assets/judul film/the perfect date.png'
 import TuneInForLove from '@/lib/assets/judul film/tune in for love.png'
 import WeddingSeason from '@/lib/assets/judul film/wedding seseon.png'
+import Lokasi from '@/lib/assets/gambar alamat.png'
+import Bank from '@/lib/assets/gambar atm.png'
+import { FileStack, MapPinHouse } from 'lucide-react'
 
 type CoverImage = {
     titleImage: string | StaticImport
@@ -47,6 +50,7 @@ function MainUndangan() {
     const [modalTitle, setModalTitle] = useState<string>('')
     const [isCoverMovie, setIsCoverMovie] = useState<boolean>(false)
     const [coverImage, setCoverImage] = useState<CoverImage | null>(null)
+    const [isCopied, setIsCopied] = useState<boolean>(false)
 
 
     const onImageClick = (img: string | StaticImport, title: string, isCover?: boolean, cover?: CoverImage ) => {
@@ -62,6 +66,22 @@ function MainUndangan() {
             }
         }
         else setIsCoverMovie(false)
+    }
+
+    const handleCopy = async () => {
+        try {
+            await navigator.clipboard.writeText('1234565779');
+            setIsCopied(true);
+            const timer = setTimeout(() => {
+                setIsCopied(false);
+            }, 2000);
+        
+            // Clean up the timer
+            return () => clearTimeout(timer);
+
+            } catch (err) {
+            console.error('Failed to copy text: ', err);
+            }
     }
   return (
     <>
@@ -437,6 +457,58 @@ function MainUndangan() {
                         </div>
                     </div>
 
+                </div>
+            </div>
+
+            <div className='flex flex-col max-w-[400px] w-full mt-4 gap-3'>
+                <h2 className='font-bold text-lg'>Save The Date</h2>
+                <div className='flex gap-2 text-lg font-black justify-center'>
+                    <div className='flex px-2 py-1 bg-red-600 rounded'>
+                        <p>16</p>
+                    </div>
+                    <div className='flex px-2 py-1 bg-red-600 rounded'>
+                        <p>Desember</p>
+                    </div>
+                    <div className='flex px-2 py-1 bg-red-600 rounded'>
+                        <p>2024</p>
+                    </div>
+                </div>
+                <div className='flex flex-col font-poppins text-center mt-6 text-sm items-center'>
+                    <p>WAKTU AKAD: PUKUL 10.00 WITA</p>
+                    <p>WAKTU RESEPSI: PUKUL 11.00 - SELESAI</p>
+                    <p>TEMPAT: KOTU, DESA BAMBAPUANG, KEC. ANGGERAJA,</p>
+                    <p>KAB. ENREKANG</p>
+                    <Image
+                        src={Lokasi} 
+                        alt="Map"
+                        height={300} 
+                        width={300} 
+                    />
+                    <Button className={`font-poppins border-2 flex items-center -mt-20 border-white`}>
+                        <MapPinHouse />
+                        GOOGLE  MAPS</Button>
+                </div>
+                
+            </div>
+
+            <div className='flex flex-col max-w-[400px] w-full mt-4 gap-3'>
+                <h2 className='font-bold text-lg'>Wedding Gift</h2>
+                <div className='flex flex-col items-center text-center font-poppins'>
+                    <p>BANK: B R I</p>
+                    <p>- a/n : Muhajirahtul Haq Suburan</p>
+                    <Image
+                        src={Bank} 
+                        alt="Bank"
+                        height={300} 
+                        width={300} 
+                        className='-mt-[3.4rem] -ml-4'
+                    />
+                    
+                    <Button className={`font-poppins border-2 flex items-center -mt-14 ${isCopied ? 'border-gray-400 text-gray-400' : 'border-white'}`} onClick={handleCopy}>
+                        <FileStack />
+                        { isCopied && 'TERSALIN' }
+                        { !isCopied && 'SALIN' }
+                        </Button>
                 </div>
             </div>
 
