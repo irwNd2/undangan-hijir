@@ -117,14 +117,14 @@ function MainUndangan() {
                         alt="4K logo"
                         height={18} 
                         width={18} 
-                        className='mb-1'
+                        className='mb-0.5'
                     />
                     <Image
                         src={HDLogo} 
                         alt="HD logo"
                         height={18} 
                         width={18} 
-                        className='mb-1'
+                        className='mb-0.5'
                     />
                 </div>
 
@@ -145,11 +145,9 @@ function MainUndangan() {
                     onClick={() => onImageClick(Picture2, 'Jira dan Acha')}
                 />
                 <div className='flex flex-col gap-2 text-sm text-gray-400 italic'>
-                    <p>{`Halo! Karena kalian adalah orang penting yang mengisi hari-hari kami, kami ingin informasikan bahwa kami akan segera menikah! <3`}</p>
-                    <p>Tapi sebelumnya, kami mohon maaf kepada teman dan kerabat semua karena tidak bisa mengundang kalian hadir di hari bahagia kami, dikarenakan pernikahan kami bersifat intimate wedding yang dilaksanakan di Enrekang dan hanya dihadiri oleh keluarga dan orang terdekat.</p>
-                    <p>Walaupun begitu, kami harapkan sebaik-baiknya doa untuk kelancaran pernikahan dan hari-hari bahagia setelahnya.</p>
-                    <p>Dengan penuh cinta,</p>
-                    <p className='-mt-2.5'>{`The bride and groom <3`}</p>
+                    <p>{`Dalam perjalanan hidup yang penuh warna ini, kami telah menemukan kebahagiaan yang tak ternilai saling melengkapi satu sama lain. Dengan penuh rasa syukur dan cinta, kami ingin berbagi momen istimewa ini bersama orang-orang terdekat.`}</p>
+                    <p>Dengan segala kerendahan hati, kami mengundang kehadiran Anda, sahabat, teman, dan kerabat tercinta, untuk turut merayakan hari bahagia kami, hari yang menjadi awal dari perjalanan baru sebagai pasangan suami istri. Kehadiran Anda akan menjadi doa dan restu yang paling berarti bagi kami.</p>
+                    <p>The Bride and Groom ❤️</p>
                 </div>
             </div>
             <div className='flex flex-col max-w-[400px] w-full mt-4 gap-2'>
