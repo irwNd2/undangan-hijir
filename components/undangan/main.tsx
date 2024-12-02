@@ -227,7 +227,7 @@ function MainUndangan() {
                             <p className='text-xs text-gray-400'>28m 23s</p>
                         </div>
                     </div>
-                    <p className='text-xs text-gray-400'>Katanya cinta dapat tumbuh dengan kebersamaan, seiring berjalannya waktu kami semakin dekat , kami LDR karena berjarak cukup jauh, tidak ada kata pacaran diantara kami tapi alam seakan terus berkonspirasi untuk menyatukan kami berdua. Pada pertengahan Bulan agustus dia mengajak untuk bertemu pertama kali dan menyampaikan niat seriusnya.</p>
+                    <p className='text-xs text-gray-400'>Katanya cinta dapat tumbuh dengan kebersamaan, seiring berjalannya waktu kami semakin dekat , kami LDR karena berjarak cukup jauh, tidak ada kata pacaran diantara kami tapi alam seakan terus berkonspirasi untuk menyatukan kami berdua. Pada pertengahan bulan Agustus dia mengajak untuk bertemu pertama kali dan menyampaikan niat seriusnya.</p>
                 </div>
                 <div className='flex flex-col gap-2'>
                     <div className='flex gap-3 items-center'>
@@ -244,7 +244,7 @@ function MainUndangan() {
                             <p className='text-xs text-gray-400'>32m 5s</p>
                         </div>
                     </div>
-                    <p className='text-xs text-gray-400'>Pada tanggal 26 Oktober 2024 keluarganya datang untuk silaturahmi sekaligus membahas soal pernikahan. Kami melangsungkan acara lamaran pada tanggal bulan Oktober </p>
+                    <p className='text-xs text-gray-400'>Pada tanggal 04 Oktober 2024 keluarganya datang untuk silaturahmi sekaligus membahas soal pernikahan. Kami melangsungkan acara lamaran pada tanggal 26 Oktober 2024.</p>
                 </div>
                 <div className='flex flex-col gap-2'>
                     <div className='flex gap-3 items-center'>
