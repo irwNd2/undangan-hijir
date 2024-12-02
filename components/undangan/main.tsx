@@ -15,10 +15,7 @@ import Film3 from '@/lib/assets/nikahan ijir/Foto/famourapict-280.jpg'
 import Film4 from '@/lib/assets/nikahan ijir/Foto/famourapict-669.jpg'
 import Film5 from '@/lib/assets/nikahan ijir/Foto/famourapict-670.jpg'
 import Film6 from '@/lib/assets/nikahan ijir/Foto/famourapict-683.jpg'
-import User1 from '@/lib/assets/user-1.jpg'
-import User2 from '@/lib/assets/user-2.jpg'
-import User3 from '@/lib/assets/user-3.jpg'
-import User4 from '@/lib/assets/user-4.jpg'
+
 import { Button } from '../ui/button'
 import { useState } from 'react'
 import { ImageModal } from '../image-modal'
@@ -34,6 +31,7 @@ import WeddingSeason from '@/lib/assets/judul film/wedding seseon.png'
 import Lokasi from '@/lib/assets/gambar alamat.png'
 import Bank from '@/lib/assets/gambar atm.png'
 import { FileStack, MapPinHouse } from 'lucide-react'
+import CommentSection from '../comments'
 
 type CoverImage = {
     titleImage: string | StaticImport
@@ -94,6 +92,7 @@ function MainUndangan() {
                 src="/video/video-1.mp4" 
                 autoPlay 
                 loop 
+                muted
                 playsInline 
                 className="max-w-[400px] w-full rounded-b"
             />
@@ -513,84 +512,7 @@ function MainUndangan() {
                 </div>
             </div>
 
-            <div className='flex flex-col max-w-[400px] w-full mt-4 gap-3'>
-                <h2 className='font-bold text-lg'>Wish for the couple</h2>
-
-                <div className='overflow-auto w-full max-h-[350px] flex flex-col gap-4'>
-                    <div className='flex gap-3'>
-                        <Image 
-                            src={User1} 
-                            alt="Netflix Default Avatar" 
-                            height={30} 
-                            width={30} 
-                            className="hover:cursor-pointer rounded-md h-[30px]"
-                        />
-
-                        <div className='flex flex-col gap-2'>
-                            <p className='font-bold'>Indah aulia</p>
-                            <p className='text-sm text-gray-500'>{`Kak konsepnya cocok bgt sama aku yg suka nonton, jadi izin kak mau aku referensi kan utk aku yh kak, btw kakaknya selamat yah atas pernikahannya, semoga menjad keluarga yang kakak impikan, aamiin🥰🤍`}</p>
-                        </div>
-                    </div>
-
-                    <div className='flex gap-3'>
-                        <Image 
-                            src={User2} 
-                            alt="Netflix Default Avatar" 
-                            height={30} 
-                            width={30} 
-                            className="hover:cursor-pointer rounded-md h-[30px]"
-                        />
-
-                        <div className='flex flex-col gap-2'>
-                            <p className='font-bold'>Indah aulia</p>
-                            <p className='text-sm text-gray-500'>{`Kak konsepnya cocok bgt sama aku yg suka nonton, jadi izin kak mau aku referensi kan utk aku yh kak, btw kakaknya selamat yah atas pernikahannya, semoga menjad keluarga yang kakak impikan, aamiin🥰🤍`}</p>
-                        </div>
-                    </div>
-
-                    <div className='flex gap-3'>
-                        <Image 
-                            src={User3} 
-                            alt="Netflix Default Avatar" 
-                            height={30} 
-                            width={30} 
-                            className="hover:cursor-pointer rounded-md h-[30px]"
-                        />
-
-                        <div className='flex flex-col gap-2'>
-                            <p className='font-bold'>Indah aulia</p>
-                            <p className='text-sm text-gray-500'>{`Kak konsepnya cocok bgt sama aku yg suka nonton, jadi izin kak mau aku referensi kan utk aku yh kak, btw kakaknya selamat yah atas pernikahannya, semoga menjad keluarga yang kakak impikan, aamiin🥰🤍`}</p>
-                        </div>
-                    </div>
-
-                    <div className='flex gap-3'>
-                        <Image 
-                            src={User4} 
-                            alt="Netflix Default Avatar" 
-                            height={30} 
-                            width={30} 
-                            className="hover:cursor-pointer rounded-md h-[30px]"
-                        />
-
-                        <div className='flex flex-col gap-2'>
-                            <p className='font-bold'>Indah aulia</p>
-                            <p className='text-sm text-gray-500'>{`Kak konsepnya cocok bgt sama aku yg suka nonton, jadi izin kak mau aku referensi kan utk aku yh kak, btw kakaknya selamat yah atas pernikahannya, semoga menjad keluarga yang kakak impikan, aamiin🥰🤍`}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className='flex flex-col max-w-[400px] w-full mt-4 gap-3 mb-10'>
-                <p>Name</p>
-                <input type='text' className='h-8 rounded px-2 text-black' />
-                <p>Message</p>
-                <input type='text' className='h-8 rounded px-2 text-black' />
-                <Button >Submit</Button>
-                <div className='flex flex-col items-center'>
-                    <p>{`Thank you for checking up all the things up there!`}</p>
-                    <p className='-mt-1'>{`Can’t wait to see u again! <3`}</p>
-                    <p className='mt-4 text-[9px] text-gray-400'>E-invitation made by Irwan with ♥</p>
-                </div>
-            </div>
+            <CommentSection />
         </div>
         <ImageModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} img={modalImage} title={modalTitle} isCoverMovie={isCoverMovie}
                 isTop={coverImage?.isTop}
