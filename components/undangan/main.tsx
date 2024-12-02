@@ -245,7 +245,7 @@ function MainUndangan() {
                             <p className='text-xs text-gray-400'>32m 5s</p>
                         </div>
                     </div>
-                    <p className='text-xs text-gray-400'>Pada tanggal 4 Oktober 2024 keluarganya datang untuk silaturahmi sekaligus membahas soal pernikahan. Kami melangsungkan acara lamaran pada tanggal bulan Oktober </p>
+                    <p className='text-xs text-gray-400'>Pada tanggal 26 Oktober 2024 keluarganya datang untuk silaturahmi sekaligus membahas soal pernikahan. Kami melangsungkan acara lamaran pada tanggal bulan Oktober </p>
                 </div>
                 <div className='flex flex-col gap-2'>
                     <div className='flex gap-3 items-center'>
