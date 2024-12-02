@@ -118,7 +118,7 @@ function CommentSection() {
                             />
 
                             <div className='flex flex-col gap-2 w-full'>
-                                <div className="flex justify-between w-full">
+                                <div className="flex justify-between w-full items-center">
                                     <p className='font-bold'>{comment.name}</p>
                                     <p className="text-xs">{formatRelativeTime(comment.createdAt)}</p>
                                 </div>
