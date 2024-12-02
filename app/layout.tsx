@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Acha & Hijir: Sebelum Hari H - Nikahfix",
+  title: "Acha & Jira: Sebelum Hari H - Nikahfix",
   description: "Pernikahan Hijir dan Johan",
 };
 
