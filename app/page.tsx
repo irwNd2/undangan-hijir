@@ -14,7 +14,7 @@ import NetflixLogo from '@/lib/assets/Netflix_Symbol_RGB.png'
 import MainUndangan from "@/components/undangan/main";
 
 export default function Home() {
-  const [phase, setPhase] = useState<number>(3)
+  const [phase, setPhase] = useState<number>(1)
   const [bgClass, setBgClass] = useState<string>('bg-black')
 
   useEffect(() => {
