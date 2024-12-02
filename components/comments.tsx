@@ -4,6 +4,7 @@ import Image from "next/image"
 import { Button } from "./ui/button"
 import { IComment } from "@/models/Comment"
 import { FormEvent, useEffect, useState } from "react"
+import { Instagram } from "lucide-react"
 
 function CommentSection() {
     const [name, setName] = useState<string>('');
@@ -141,7 +142,12 @@ function CommentSection() {
             <div className='flex flex-col items-center'>
                 <p>{`Thank you for checking up all the things up there!`}</p>
                 <p className='-mt-1'>{`Can’t wait to see u again! <3`}</p>
-                <p className='mt-4 text-[9px] text-gray-400'>E-invitation made by Irwan with ♥</p>
+                <p className='mt-4 text-[10px] text-gray-400 flex gap-1 items-center'>E-invitation made by 
+                  <a href="https://www.instagram.com/irwnd2/" className="flex items-center gap-0.5"><Instagram size={13}/>irwnd2</a>
+                  &
+                  <a href="https://www.instagram.com/kyuutoo/" className="flex items-center gap-0.5"><Instagram size={13}/>kyutoo</a>
+
+                </p>
             </div>
         </div>
     </>
