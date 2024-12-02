@@ -9,6 +9,8 @@ function CommentSection() {
     const [name, setName] = useState<string>('');
     const [message, setMessage] = useState<string>('');
     const [comments, setComments] = useState<IComment[]>([]);
+    const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+
 
     useEffect(() => {
         fetchComments();
@@ -28,6 +30,7 @@ function CommentSection() {
     
       const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        setIsSubmitting(true)
     
         try {
           const response = await fetch('/api/comments', {
@@ -48,6 +51,8 @@ function CommentSection() {
           }
         } catch (error) {
           console.error('Failed to submit comment', error);
+        } finally {
+          setIsSubmitting(false)
         }
       };
 
@@ -129,7 +134,9 @@ function CommentSection() {
                 <input type='text' className='h-8 rounded px-2 text-black' id="name" name="name" value={name} onChange={(e) => setName(e.target.value)}/>
                 <label htmlFor="message">Pesan</label>
                 <textarea id="message" name="message" className='h-24 rounded px-2 text-black' rows={4} cols={10} value={message} onChange={(e) => setMessage(e.target.value)}/>
-                <Button type="submit">Submit</Button>
+                <Button type="submit" className="bg-white/30 text-white font-bold" disabled={isSubmitting}>
+                  { isSubmitting ? 'Sedang mengirim pesan...' : 'Kirim' }
+                </Button>
             </form>
             <div className='flex flex-col items-center'>
                 <p>{`Thank you for checking up all the things up there!`}</p>
